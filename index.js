@@ -3,7 +3,7 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 
 const app = express();
-
+app.get("/", (req, res)=>res.send("welcome"))
 // Define a route to handle requests with the train number
 app.get("/train-status/:trainNumber", async (req, res) => {
   const { trainNumber } = req.params;
