@@ -1,5 +1,1 @@
-{
-    "version": 2,
-    "builds": [{ "src": "src/index.js", "use": "@now/node" }],
-    "routes": [{ "handle": "vercel", "src": "/(.*)" }]
-  }
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
