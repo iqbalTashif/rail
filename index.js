@@ -6,7 +6,7 @@ const cheerio = require("cheerio");
 
 const app = express();
 app.get("/", (req, res)=>res.send("welcome"))
-// Define a route to handle requests with the train number
+// Define a route to handle requests with the train number---- hmmmmmmmmm salman khan
 app.get("/train-status/:trainNumber", async (req, res) => {
   const { trainNumber } = req.params;
   const url = `https://www.confirmtkt.com/train-running-status/${trainNumber}`; // Replace with the actual URL pattern
